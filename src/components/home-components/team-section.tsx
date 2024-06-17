@@ -37,34 +37,27 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="w-full bg-indigo-600 mt-[80px] min-h-screen flex flex-col items-center justify-between gap-2">
-      <Container className="h-[40vh]">
-        <div className="absolute left-0 lg:h-[6vh] lg:w-[3vw] h-10 w-10 rounded-r-full bg-beeYellow-secondary" />
-        <h1 className="text-beeYellow-secondary text-4xl font-bold lg:text-left text-center">
+    <section className="w-full mt-[80px] min-h-screen flex flex-col items-center justify-between lg:gap-2">
+      <Container>
+        <div className="absolute left-0 lg:h-[6vh] lg:w-[3vw] h-6 w-10 rounded-r-full bg-beeYellow-secondary" />
+        <h1 className="text-beeYellow-secondary text-2xl lg:text-4xl font-bold lg:text-left text-center">
           Nossa Equipa
         </h1>
-        <p className="text-beeWhiteSmoke my-12">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
-          possimus officiis sint. Fugit officiis ab quibusdam amet iste ex,
-          animi veniam dolorem commodi sed maxime nisi dicta enim non blanditiis
-          consectetur sint laborum ad tempore perspiciatis modi debitis minima
-          velit placeat. Omnis commodi deleniti eaque animi ratione, id pariatur
-          sapiente perspiciatis qui veniam eos, voluptatem, eius expedita minus!
-          Ea nemo dolore tenetur, eum non recusandae voluptatum fuga libero odio
-          explicabo quos quas esse mollitia, iure impedit. Sapiente quae odit
-          inventore, quasi corrupti debitis provident quibusdam perferendis
-          deleniti iure sequi ullam eligendi iusto dolorem commodi nam dicta
-          animi modi expedita labore.
+        <p className="text-beeWhiteSmoke leading-normal my-12 text-center lg:w-[60vw] w-full lg:text-left">
+          Uma agência de comunicação com 31 anos de existência em Angola,
+          contudo inquieta, ágil e com foco em resultados. Trabalhamos com base
+          em metodologias flexíveis, e equipas multidisciplinares prontas a dar
+          asas à imaginação, e abraçamos todos os desafios.
         </p>
       </Container>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-2 bg-red-400 md:grid-cols-3 w-full  lg:grid-cols-4">
         {teamMembers.map((member) => (
           <div key={member.id} className="relative w-full h-full">
             <img
               src={member.img}
               alt="projeto"
-              className="w-full h-full obect-cover"
+              className="w-full h-full obect-contain aspect-square"
             />
           </div>
         ))}

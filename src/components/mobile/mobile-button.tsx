@@ -20,10 +20,10 @@ const MobileButton = () => {
         <IoMdMenu />
       </button>
       {isOpen && (
-        <motion.div className="absolute top-0 w-full transition-all duration-200 ease-linear right-0 bg-black/70 h-screen z-10">
+        <motion.div className="fixed top-0 w-full transition-all duration-200 ease-linear right-0 bg-black/70 h-screen z-10">
           <motion.div
             initial={{ width: "0vw" }}
-            whileInView={{ width: "85vw" }}
+            whileInView={{ width: "100vw" }}
             transition={{ duration: 0.2, ease: "linear" }}
             className="bg-beeBlack-primary h-full absolute right-0 flex items-start p-4 justify-end"
           >

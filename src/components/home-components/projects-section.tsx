@@ -29,7 +29,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="w-full mt-[80px] h-screen">
+    <section className="w-full mt-[80px] min-h-screen">
       <div className="w-full grid h-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <Project key={project.id} project={project} />

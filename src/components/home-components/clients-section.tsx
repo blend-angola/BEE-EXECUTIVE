@@ -13,9 +13,9 @@ const ClientsSection = () => {
   return (
     <section className="relative py-16 lg:mt-[40px]">
       <Container className="flex flex-col gap-4">
-        <div className="absolute left-0 lg:h-[6vh] lg:w-[3vw] h-10 w-10 rounded-r-full bg-beeYellow-secondary" />
+        <div className="absolute left-0 lg:h-[6vh] lg:w-[3vw] h-6 w-10 rounded-r-full bg-beeYellow-secondary" />
 
-        <h1 className="text-beeYellow-secondary text-4xl font-bold lg:text-left text-center">
+        <h1 className="text-beeYellow-secondary text-2xl lg:text-4xl font-bold lg:text-left text-center">
           Nossos clientes
         </h1>
 

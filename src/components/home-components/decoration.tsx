@@ -9,7 +9,7 @@ const DecorationDesktop = () => {
 
 const DecorationMobile = () => {
   return (
-    <div className="bg-beeYellow-secondary w-[60vw] h-[6vh] -bottom-2 left-1/2 -translate-x-1/2 lg:hidden flex items-center justify-center rounded-full  absolute flex-col text-lg font-semibold text-beeBlack-secondary text-center">
+    <div className="bg-beeYellow-secondary w-[60vw] h-[6vh] -bottom-2 left-1/2 -translate-x-1/2 lg:hidden flex items-center justify-center rounded-full  absolute flex-col text-base font-semibold text-beeBlack-secondary text-center">
       <p className="w-full px-4">A criar buzz há 30 anos.</p>
     </div>
   )

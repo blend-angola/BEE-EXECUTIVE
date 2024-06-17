@@ -8,7 +8,7 @@ import Container from "../global/container"
 
 const HeroSection = () => {
   return (
-    <section className="w-full h-[calc(100vh-80px)] pb-4 border-b-[2px] border-b-beeBlack-secondary bg-beeBlack-primary">
+    <section className="w-full h-[calc(100vh-112px)] pb-4 border-b-[2px] border-b-beeBlack-secondary bg-beeBlack-primary">
       <Swiper
         autoplay
         pagination
