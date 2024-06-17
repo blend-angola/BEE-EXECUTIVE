@@ -3,3 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-pagination-bullet {
+  background-color: #ffc146 !important;
+  border: 2px solid #f9c347 !important;
+}
