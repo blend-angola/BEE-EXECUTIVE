@@ -37,13 +37,13 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="w-full lg:mt-[80px] min-h-screen flex flex-col items-center justify-between lg:gap-2">
+    <section className="w-full mt-[80px] min-h-screen flex flex-col items-center justify-between lg:gap-2">
       <Container>
         <div className="absolute left-0 lg:h-[6vh] lg:w-[3vw] h-6 w-10 rounded-r-full bg-beeYellow-secondary" />
-        <h1 className="text-beeYellow-secondary text-2xl lg:text-4xl font-bold lg:text-left text-center">
+        <h1 className="text-skin-title text-2xl lg:text-4xl font-bold lg:text-left text-center">
           Nossa Equipa
         </h1>
-        <p className="text-beeWhiteSmoke leading-normal my-12 text-center lg:w-[60vw] w-full lg:text-left">
+        <p className="text-skin-text leading-normal my-12 text-center lg:w-[60vw] w-full lg:text-left">
           Uma agência de comunicação com 31 anos de existência em Angola,
           contudo inquieta, ágil e com foco em resultados. Trabalhamos com base
           em metodologias flexíveis, e equipas multidisciplinares prontas a dar

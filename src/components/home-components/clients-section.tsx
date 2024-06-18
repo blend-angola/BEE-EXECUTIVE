@@ -1,5 +1,6 @@
-import { motion } from "framer-motion"
+import { memo } from "react"
 import Container from "../global/container"
+import { ClientsDesktop, ClientsMobile } from "./clients"
 
 const clients = [
   "/clients/1.png",
@@ -10,48 +11,21 @@ const clients = [
   "/clients/6.png",
 ]
 
-const animationVariant = {
-  animate: ({
-    index,
-    totalClients,
-  }: {
-    index: number
-    totalClients: number
-  }) => ({
-    left: -120,
-    transition: {
-      ease: "linear",
-      repeat: Infinity,
-      duration: 5,
-      delay: (5 / totalClients) * (totalClients - index + 1),
-    },
-  }),
-}
+const MemoClientDesktop = memo(ClientsDesktop)
+const MemoClientMobile = memo(ClientsMobile)
 
 const ClientsSection = () => {
   const totalClients = clients.length
   return (
-    <section className="relative py-16 lg:mt-[40px]">
-      <Container className="flex flex-col gap-4">
-        <div className="absolute left-0 lg:h-[6vh] lg:w-[3vw] h-6 w-10 rounded-r-full bg-beeYellow-secondary" />
+    <section className="relative py-8 lg:mt-[40px] border-y border-y-beeBorder">
+      <Container className="flex flex-col gap-4 my-10">
+        <div className="absolute lg:left-0 top-0 left-1/2 -translate-x-1/2 lg:h-[6vh] lg:w-[3vw] h-10 w-6 lg:rounded-r-full rounded-b-full bg-beeYellow-secondary" />
 
-        <h1 className="text-beeYellow-secondary text-2xl lg:text-4xl font-bold lg:text-left text-center">
+        <h1 className="text-skin-title text-3xl lg:text-4xl font-bold lg:text-left text-center">
           Nossos clientes
         </h1>
-
-        <div className="lg:w-[80vw] w-full p-8 lg:rounded-full rounded-lg mt-14 h-32 overflow-hidden lg:h-36 bg-beeWhiteSmoke flex relative lg:flex justify-center">
-          {clients.map((client, index) => (
-            <motion.img
-              custom={{ index, totalClients }}
-              variants={animationVariant}
-              animate="animate"
-              key={index}
-              src={client}
-              alt="logotipo-cliente"
-              className="absolute object-contain left-[100%] h-14 md:w-28 w-16"
-            />
-          ))}
-        </div>
+        <MemoClientDesktop clients={clients} totalClients={totalClients} />
+        <MemoClientMobile clients={clients} totalClients={totalClients} />
       </Container>
     </section>
   )

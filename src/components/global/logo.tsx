@@ -1,12 +1,20 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { twMerge } from "tailwind-merge"
+import { useTheme } from "../../context/theme-context"
 
 type Props = {
   className?: string
 }
 
 const Logo: React.FC<Props> = ({ className }) => {
+  const { theme } = useTheme()
+
+  const logo =
+    theme === "dark"
+      ? "/logotipo/logotipo-texto.png"
+      : "/logotipo/logotipo-texto-black.png"
+
   return (
     <Link
       to="/"
@@ -17,9 +25,9 @@ const Logo: React.FC<Props> = ({ className }) => {
     >
       <div className="relative h-8 w-full">
         <img
-          src="/logotipo/logotipo-texto.png"
+          src={logo}
           alt="logotipo"
-          className="absolute inset-0 w-full h-full object-contain"
+          className="absolute transition-all duration-200 ease-in-out inset-0 w-full h-full object-contain"
         />
       </div>
 

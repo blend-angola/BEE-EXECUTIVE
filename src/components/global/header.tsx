@@ -1,13 +1,14 @@
 import Logo from "./logo"
 import Buzz from "./buzz"
 import Container from "./container"
-import { Link, NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { HEADER_LINKS } from "../../constants"
 import MobileButton from "../mobile/mobile-button"
+import ThemeButton from "./theme-button"
 
 const Header = () => {
   return (
-    <header className="relative h-28 bg-beeBlack-primary border-b-[1px] border-b-beeBlack-secondary">
+    <header className="relative h-28 bg-beeBg ">
       <Container className="flex items-center h-full justify-between py-2">
         <MobileButton />
         <Logo className="w-56" />
@@ -24,8 +25,8 @@ const Header = () => {
                 to={link.link}
                 className={`${
                   link.active
-                    ? "hover:text-beeWhiteSmoke text-beeBlack-secondary"
-                    : "hover:text-beeYellow-secondary text-beeWhiteSmoke"
+                    ? "hover:text-skin-text text-skin-text"
+                    : "hover:text-beeYellow-secondary text-skin-text"
                 } mt-4 text-base font-normal capitalize duration-200 transition-all ease-in-out`}
               >
                 {link.label}
@@ -33,7 +34,11 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <Buzz />
+
+        <div className="flex items-center gap-1">
+          <ThemeButton />
+          <Buzz />
+        </div>
       </Container>
     </header>
   )

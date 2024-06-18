@@ -14,3 +14,26 @@ body {
   padding: 0px;
   box-sizing: border-box;
 }
+
+@layer base {
+  :root {
+    --beeBg: #212121;
+    --beeTitle: #ffc146;
+    --beeText: #fff;
+    --beeBorder: #ebebeb;
+  }
+
+  :root {
+    --beeBg: #fff;
+    --beeTitle: #212121;
+    --beeText: #212121;
+    --beeBorderColor: #ebebeb;
+  }
+
+  .dark {
+    --beeBg: #212121;
+    --beeTitle: #ffc146;
+    --beeText: #fff;
+    --beeBorderColor: #363535;
+  }
+}

@@ -6,21 +6,15 @@ type Props = {
     bg: string
     title: string
     img: string
-    color: string
   }
 }
 
 const Service: React.FC<Props> = ({ service }) => {
-  const { bg, color, img, title } = service
+  const { img, title } = service
   return (
-    <div
-      style={{ backgroundColor: bg }}
-      className="p-6 border-beeBlack-secondary w-full justify-start border rounded-xl flex items-center gap-4"
-    >
+    <div className="p-6 hover:bg-beeYellow-secondary transition-all ease-in-out duration-200 border border-beeBorder w-full lg:justify-start justify-center rounded-xl flex lg:flex-row flex-col items-center gap-4">
       <img src={img} alt={title} className="object-contain h-14 w-20" />
-      <h1 className="text-xl capitalize" style={{ color }}>
-        {title}
-      </h1>
+      <h1 className="text-xl text-center lg:text-left text-skin-text capitalize">{title}</h1>
     </div>
   )
 }
