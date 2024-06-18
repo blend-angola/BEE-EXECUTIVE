@@ -3,6 +3,8 @@ import { IoMdMenu } from "react-icons/io"
 import { MdClose } from "react-icons/md"
 
 import { AnimatePresence, motion } from "framer-motion"
+import { HEADER_LINKS } from "../../constants"
+import { Link } from "react-router-dom"
 
 const MobileButton = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,25 +17,33 @@ const MobileButton = () => {
     <div className="flex lg:hidden">
       <button
         onClick={handleOpen}
-        className="text-beeYellow-secondary text-3xl"
+        className="text-beeYellow-secondary text-6xl"
       >
         <IoMdMenu />
       </button>
       {isOpen && (
-        <motion.div className="fixed top-0 w-full transition-all duration-200 ease-linear right-0 bg-black/70 h-screen z-10">
-          <motion.div
-            initial={{ width: "0vw" }}
-            whileInView={{ width: "100vw" }}
-            transition={{ duration: 0.2, ease: "linear" }}
-            className="bg-beeBlack-primary h-full absolute right-0 flex items-start p-4 justify-end"
+        <motion.div
+          initial={{ width: "0vw" }}
+          whileInView={{ width: "100vw" }}
+          transition={{ duration: 0.2, ease: "linear" }}
+          className="bg-beeBlack-primary fixed top-0 w-full h-screen z-50 flex flex-col right-0 items-center p-8 justify-end"
+        >
+          <button
+            onClick={handleOpen}
+            className="text-5xl text-beeYellow-secondary self-end"
           >
-            <button
-              onClick={handleOpen}
-              className="text-3xl text-beeYellow-secondary"
-            >
-              <MdClose />
-            </button>
-          </motion.div>
+            <MdClose />
+          </button>
+          <ul className="w-full h-full flex flex-col">
+            {HEADER_LINKS.map((link, index) => (
+              <li
+                key={index}
+                className="flex-1 text-3xl font-semibold text-beeYellow-secondary flex items-center justify-start capitalize"
+              >
+                <Link to={link.link}>{link.label}</Link>
+              </li>
+            ))}
+          </ul>
         </motion.div>
       )}
     </div>

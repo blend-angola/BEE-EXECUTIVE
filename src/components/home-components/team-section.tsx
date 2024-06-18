@@ -37,7 +37,7 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="w-full mt-[80px] min-h-screen flex flex-col items-center justify-between lg:gap-2">
+    <section className="w-full lg:mt-[80px] min-h-screen flex flex-col items-center justify-between lg:gap-2">
       <Container>
         <div className="absolute left-0 lg:h-[6vh] lg:w-[3vw] h-6 w-10 rounded-r-full bg-beeYellow-secondary" />
         <h1 className="text-beeYellow-secondary text-2xl lg:text-4xl font-bold lg:text-left text-center">
