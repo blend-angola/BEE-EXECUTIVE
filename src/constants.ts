@@ -2,22 +2,27 @@ export const HEADER_LINKS = [
   {
     link: "quem-somos",
     label: "quem somos",
+    active: false,
   },
   {
     link: "servicos",
     label: "serviços",
+    active: true,
   },
   {
     link: "portfolio",
     label: "portfólio",
+    active: false,
   },
   {
     link: "equipa",
     label: "equipa",
+    active: false,
   },
   {
     link: "buzz",
     label: "contactos",
+    active: false,
   },
 ]
 

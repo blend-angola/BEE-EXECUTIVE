@@ -8,3 +8,9 @@
   background-color: #ffc146 !important;
   border: 2px solid #f9c347 !important;
 }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}

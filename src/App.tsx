@@ -4,7 +4,7 @@ import Header from "./components/global/header"
 
 function App() {
   return (
-    <main className="w-full flex flex-col font-Poppins bg-beeBlack-primary">
+    <main className="w-full flex flex-col font-Poppins bg-beeBlack-primary min-h-screen">
       <Header />
       <Outlet />
       <Footer />

@@ -1,10 +1,9 @@
 import { useState } from "react"
+import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
 import { IoMdMenu } from "react-icons/io"
 import { MdClose } from "react-icons/md"
-
-import { AnimatePresence, motion } from "framer-motion"
 import { HEADER_LINKS } from "../../constants"
-import { Link } from "react-router-dom"
 
 const MobileButton = () => {
   const [isOpen, setIsOpen] = useState(false)
