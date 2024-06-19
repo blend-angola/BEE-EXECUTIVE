@@ -35,7 +35,7 @@ const ClientsDesktop: React.FC<Props> = ({ totalClients, clients }) => {
         alt="logotipo-cliente"
         variants={animationVariant}
         custom={{ index, totalClients }}
-        className="absolute object-contain left-[100%] h-28 w-36"
+        className="absolute top-1/2 -translate-y-1/2 object-contain left-[100%] h-28 w-36"
       />
     ))
   }, [clients])

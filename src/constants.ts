@@ -20,7 +20,7 @@ export const HEADER_LINKS = [
     active: false,
   },
   {
-    link: "buzz",
+    link: "contactos",
     label: "contactos",
     active: false,
   },

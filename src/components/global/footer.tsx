@@ -5,22 +5,22 @@ import { SiLinkedin, SiInstagram, SiFacebook, SiYoutube } from "react-icons/si"
 const SOCIAL_MEDIAS = [
   {
     id: 1,
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/bee_executive_/",
     icon: <SiInstagram />,
   },
   {
     id: 2,
-    link: "https://linkedin.com",
+    link: "https://www.linkedin.com/company/3199264/admin/",
     icon: <SiLinkedin />,
   },
   {
     id: 3,
-    link: "https://facebook.com",
+    link: "https://www.facebook.com/executiveangola",
     icon: <SiFacebook />,
   },
   {
     id: 4,
-    link: "https://youtube.com",
+    link: "https://www.youtube.com/channel/UCTupZGM2ZG1NNHjfL3Ck5tg",
     icon: <SiYoutube />,
   },
 ]
@@ -43,8 +43,9 @@ const Footer = () => {
               {SOCIAL_MEDIAS.map((media) => (
                 <a
                   key={media.id}
+                  target="_blank"
                   href={media.link}
-                  className="text-3xl text-skin-text lg:text-xl"
+                  className="text-3xl text-skin-text lg:text-3xl"
                 >
                   {media.icon}
                 </a>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Buzz = () => {
   return (
-    <Link to="/" className="relative h-10 w-24">
+    <Link to="/buzz" className="relative h-10 w-24">
       <img
         alt="logotipo"
         src="/logotipo/buzz.png"
