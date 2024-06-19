@@ -23,6 +23,13 @@ const MobileMenu: React.FC<Props> = ({ handleOpen }) => {
         <MdClose />
       </button>
       <ul className="w-full h-full flex flex-col py-10 px-8">
+        <li
+          className={`flex-1 border-b border-beeBorder text-3xl font-semibold text-skin-title flex items-center justify-start capitalize`}
+        >
+          <Link to="/" onClick={handleOpen}>
+            Home
+          </Link>
+        </li>
         {HEADER_LINKS.map((link, index) => (
           <li
             key={index}
