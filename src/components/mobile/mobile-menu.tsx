@@ -30,7 +30,9 @@ const MobileMenu: React.FC<Props> = ({ handleOpen }) => {
               index !== HEADER_LINKS.length - 1 && "border-b border-beeBorder"
             } font-semibold text-skin-title flex items-center justify-start capitalize`}
           >
-            <Link to={link.link}>{link.label}</Link>
+            <Link to={link.link} onClick={handleOpen}>
+              {link.label}
+            </Link>
           </li>
         ))}
       </ul>

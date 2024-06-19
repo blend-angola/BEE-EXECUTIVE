@@ -1,4 +1,4 @@
-import { DecorationDesktop, DecorationMobile } from "./decoration"
+import { DecorationMobile } from "./decoration"
 
 const HistorySection = () => {
   return (
@@ -28,7 +28,12 @@ const HistorySection = () => {
         </p>
       </div>
 
-      <DecorationDesktop />
+      <img
+        src="buzz-decoration.png"
+        className="object-cover w-[50vw] h-full hidden lg:block"
+        alt=""
+      />
+
       <DecorationMobile />
     </section>
   )
