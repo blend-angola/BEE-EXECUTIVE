@@ -6,7 +6,8 @@ const ServiceSection = () => {
   return (
     <section className="relative w-full mt-[80px]">
       <Container className="flex flex-col gap-4">
-        <div className="absolute left-0 lg:h-[6vh] lg:w-[3vw] h-7 w-10 rounded-r-full bg-beeYellow-secondary" />
+        <div className="absolute lg:left-0 -top-20 lg:top-0 left-1/2 -translate-x-1/2 lg:h-[6vh] lg:w-[6vw] h-10 w-6 rounded-b-full lg:rounded-r-full bg-beeYellow-secondary" />
+
         <h1 className="text-skin-title text-2xl lg:text-4xl font-bold lg:text-left text-center">
           O que fazemos?
         </h1>

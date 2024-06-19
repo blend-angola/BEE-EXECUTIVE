@@ -9,7 +9,7 @@ const heroImages = ["/hero/hero-1.png", "/hero/hero-2.png"]
 
 const HeroSection = () => {
   return (
-    <section className="w-full h-[calc(100vh-112px)]">
+    <section className="w-full h-[22vh] lg:h-[calc(100vh-112px)]">
       <Swiper
         autoplay
         pagination

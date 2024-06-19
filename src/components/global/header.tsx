@@ -25,7 +25,7 @@ const Header = () => {
                 to={link.link}
                 className={`${
                   link.active
-                    ? "hover:text-skin-text text-skin-text"
+                    ? "text-beeBlack-primary hover:text-beeWhiteSmoke"
                     : "hover:text-beeYellow-secondary text-skin-text"
                 } mt-4 text-base font-normal capitalize duration-200 transition-all ease-in-out`}
               >

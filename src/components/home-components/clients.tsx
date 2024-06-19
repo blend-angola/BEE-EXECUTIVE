@@ -62,7 +62,7 @@ const ClientsMobile: React.FC<Props> = ({ clients }) => {
   }, [clients])
 
   return (
-    <div className="w-full p-8 rounded-lg mt-14 h-32 bg-white lg:hidden grid grid-cols-3 place-items-center">
+    <div className="w-full p-8 rounded-lg mt-14 h-fit bg-white lg:hidden grid grid-cols-3 place-items-center">
       {memoClients}
     </div>
   )
